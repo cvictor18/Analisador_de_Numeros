@@ -4,7 +4,6 @@ let vetor = []
 
 function adicionar() { //Ao clicar em adicionar
     let res = document.getElementById('res')
-    res.innerHTML = ''
     if (iptn.value.length == 0) { //Se o campo numérico estiver vazio
         window.alert(`Impossível adicionar! Campo inválido`)
     } else {
@@ -19,6 +18,7 @@ function adicionar() { //Ao clicar em adicionar
             if (vetor.indexOf(n) == -1) { //Se o valor não existir no vetor
                 vetor.push(n) //Adiciona o valor ao vetor
                 sel.appendChild(opt) //Adiciona a mensagem ao <select>
+                res.innerHTML = ''
             } else {
                 window.alert(`Valor já adicionado`)
             }
