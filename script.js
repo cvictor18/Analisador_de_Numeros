@@ -45,6 +45,6 @@ function finalizar() { //Ao clicar em finalizar
         }
         res.innerHTML += `<p>Somando todos os valores, temos ${soma}</p>`
         let média = soma / vetor.length
-        res.innerHTML += `<p>A média dos valores digitados é ${média.toFixed(1)}</p>`    
+        res.innerHTML += `<p>A média dos valores digitados é ${média.toFixed(1).replace('.', ',')}</p>`    
     }
 }
