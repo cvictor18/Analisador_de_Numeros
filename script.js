@@ -23,6 +23,7 @@ function adicionar() { //Ao clicar em adicionar
                 window.alert(`Valor já adicionado`)
             }
             iptn.value = ''
+            iptn.focus()
         }
     }
 }
